@@ -1,11 +1,15 @@
-import './App.css';
-import ArtistView from './pages/artistview/artistview';
+import ArtistDetails from './pages/artistdetails/artistdetails';
+import LandingPage from './pages/landingpage/landingpage';
+import { BrowserRouter,Routes,Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-     <ArtistView/>
-    </div>
+    <BrowserRouter>
+        <Routes>
+          <Route index path="/" element={<LandingPage/>} />
+          <Route path="/artist/:id" element={<ArtistDetails/>} />
+          </Routes>
+    </BrowserRouter>
   );
 }
 

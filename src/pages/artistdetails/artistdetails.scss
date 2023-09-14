@@ -1,0 +1,14 @@
+@media screen and (max-width: 480px) {
+  .artistDetailsView {
+    .artistDiv {
+      flex-direction: column;
+
+      .mainDiv {
+        width: 100%;
+      }
+      .trackDiv {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback } from "react";
-import logo from "../../img/deezer.png";
+import deezerlogo from "../../img/deezer.png";
 import hits from "../../img/landingPageImage/hits.webp";
 import hipHop from "../../img/landingPageImage/hipHop.webp";
 import pop from "../../img/landingPageImage/pop.webp";
@@ -44,7 +44,7 @@ const LandingPage = () => {
       <div className="flex landingPage">
         <div className="w-1/5 p-8 sideBar">
           <div className="w-2/5">
-            <img src={logo} alt="logo" />
+            <img src={deezerlogo} alt="DeezerLogo" />
           </div>
           <div className="mt-9">
             <div className="flex mt-20">

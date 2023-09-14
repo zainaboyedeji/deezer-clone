@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Deezer Clone Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is built using React and it involves the integration of the Deezer API.
+&nbsp;
 
-## Available Scripts
+## Installation and Configuration
 
-In the project directory, you can run:
+To install and configure the project's prerequisites and dependencies, please follow these steps:
 
-### `npm start`
+1. Make sure you have Node.js and npm (Node Package Manager) installed on your machine.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Clone the project repository from GitHub:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```shell
+  git clone https://github.com/zainaboyedeji/deezer-clone
+```
 
-### `npm test`
+3. Navigate to the project's root directory:
+```shell
+  cd deezer-clone
+```
+4. Install the required dependencies using npm:
+```shell
+  npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. Create a .env file in the project's root directory and provide the necessary environment variables as specified in the .env.example file.
 
-### `npm run build`
+## Running
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To start the project locally, run
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```shell
+  npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Proxy
 
-### `npm run eject`
+I created my own proxy as cors anywhere wasn't working for me. https://github.com/zainaboyedeji/deezer-clone/blob/main/proxy.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

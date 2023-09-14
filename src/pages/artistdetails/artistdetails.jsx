@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getTopTrack, getArtistById } from "../../services/artistService";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import deezerlogo from "../../img/deezer.png";
 import "./artistdetails.scss";
 
 const ArtistDetails = () => {
@@ -18,8 +19,11 @@ const ArtistDetails = () => {
   }, [id]);
   return (
     <div className="p-5 artistDetailsView">
-      <div>
-        <input type="text" placeholder="Search here" className="inputStyle" />
+      <Link to="/">
+            <img src={deezerlogo} alt="DeezerLogo" />
+          </Link>
+      <div className="artistInput mt-10">
+        <input type="text" placeholder="Search here" className="w-full" />
       </div>
 
       <div className="flex mt-5 artistDiv">
@@ -40,7 +44,7 @@ const ArtistDetails = () => {
       </div>
       <div className="w-full artistAlbum mt-10">
           <h3>Albums</h3>
-          <div className="flex justify-evenly mt-5 flex-wrap albumDiv">
+          <div className="flex mt-5 albumDiv">
           {tracks?.map((album) => (
             <div key={album.id} className="w-2/4 mt-5">
              <div><img src={album.album.cover} alt="albumImage"/> </div>
